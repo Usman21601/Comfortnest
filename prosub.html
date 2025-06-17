@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Property - ComfortNest</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome and Boxicons for icons -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="prosub.css" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header" id="header">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="/index.html">
+            <img src="./logohd.png" alt="ComfortNest" style="height:48px;width:auto;object-fit:contain;margin-right:10px;">
+            <span class="fw-bold fs-3" style="letter-spacing:1px;">ComfortNest</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="/dashboard.html">Dashboard</a></li>
+              <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="/privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div class="property-form-section">
+        <div class="container">
+            <h2>Add New Property</h2>
+            <form id="propertyForm" action="/api/property" method="POST">
+                <div class="form-group">
+                    <label for="propertyType">Property Type</label>
+                    <select class="form-control" id="propertyType" required>
+                        <option value="">Select Type</option>
+                        <option value="house">House</option>
+                        <option value="flat">Flat</option>
+                        <option value="marriage_hall">Marriage Hall</option>
+                        <option value="office">Office</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="Enter Address" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="city" placeholder="Enter City" required>
+                </div>
+                <div class="form-group">
+                    <label for="province">Province</label>
+                    <input type="text" class="form-control" id="province" placeholder="Enter Province" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <input type="text" class="form-control" id="country" placeholder="Enter Country" required>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <input type="number" class="form-control" id="price" placeholder="Enter Price" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea class="form-control" id="description" placeholder="Enter Property Description" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Listing</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="row">
+        <div class="col d-flex">
+          <h4>INFORMATION</h4>
+          <a href="/about.html">About us</a>
+          <a href="/contact.html">Contact Us</a>
+          <a href="/privacy-policy.html">Privacy Policy</a>
+        </div>
+        <div class="col d-flex">
+          <a href="https://www.facebook.com/your-facebook-page" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+            <i class="bx bxl-facebook-square"></i>
+          </a>
+          <a href="https://www.instagram.com/your-instagram-profile" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+            <i class="bx bxl-instagram-alt"></i>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=923239140684" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/api.js"></script>
+    <script src="js/prosub.js"></script>
+</body>
+</html>

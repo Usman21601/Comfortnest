@@ -1,0 +1,376 @@
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Dashboard Hero */
+.dashboard-hero {
+    background-color: #2d3e50;
+    color: white;
+    padding: 2rem 0;
+    margin-top: 30px;
+}
+
+.dashboard-hero h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.dashboard-hero .lead {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    background-color: #f8f9fa;
+}
+
+/* Statistics Cards */
+.stats-container {
+    margin-bottom: 2.5rem;
+}
+
+.stat-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.stat-icon {
+    background: linear-gradient(135deg, #6abf00, #488000);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.stat-icon i {
+    font-size: 24px;
+}
+
+.stat-info {
+    flex: 1;
+}
+
+.stat-count {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    color: #2d3e50;
+}
+
+.stat-title {
+    font-size: 1rem;
+    margin: 0;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+/* Profile Section */
+.profile-section {
+    margin-bottom: 2rem;
+}
+
+.profile-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.profile-header {
+    background: linear-gradient(135deg, #6abf00, #488000);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.profile-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.profile-body {
+    padding: 2rem;
+    text-align: center;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1.5rem;
+    position: relative;
+    background-color: #f8f9fa;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.profile-details h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #2d3e50;
+}
+
+.edit-profile-button {
+    background-color: #6abf00;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.edit-profile-button:hover {
+    background-color: #5a9f00;
+}
+
+/* Readonly form field styling */
+input.form-control[readonly] {
+    background-color: #f8f9fa;
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+/* Help text styling */
+small.text-muted {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8rem;
+}
+
+small.text-danger {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #dc3545;
+}
+
+small.text-danger a {
+    color: #dc3545;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+small.text-danger a:hover {
+    text-decoration: none;
+}
+
+/* Listings Section */
+.listings-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    height: 100%;
+}
+
+.section-header {
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.add-property-button {
+    background-color: #6abf00;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.add-property-button:hover {
+    background-color: #5a9f00;
+    color: white;
+    text-decoration: none;
+}
+
+/* Property List */
+.property-list {
+    margin-top: 1.5rem;
+}
+
+.property-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s;
+    background-color: white;
+}
+
+.property-card:hover {
+    transform: translateY(-5px);
+}
+
+.property-image {
+    height: 180px;
+    position: relative;
+}
+
+.property-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.property-details {
+    padding: 1.2rem;
+}
+
+.property-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2d3e50;
+}
+
+.property-location {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.property-meta {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+    border-top: 1px solid #e9ecef;
+    margin-top: 0.8rem;
+}
+
+.property-price {
+    font-weight: 700;
+    color: #6abf00;
+}
+
+.property-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #2d3e50;
+    color: white;
+}
+
+.social-link {
+    color: white;
+    margin-left: 1.2rem;
+    font-size: 1.1rem;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.social-link:hover {
+    opacity: 1;
+    color: #6abf00;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: #6abf00;
+    text-decoration: underline;
+}
+
+/* Bootstrap Modal Customization */
+.modal-header {
+    background-color: #2d3e50;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #6abf00;
+    border-color: #6abf00;
+}
+
+.btn-primary:hover {
+    background-color: #5a9f00;
+    border-color: #5a9f00;
+}
+
+/* Responsive Designs */
+@media (max-width: 992px) {
+    .dashboard-hero {
+        margin-top: 20px;
+        padding: 1.5rem 0;
+    }
+    
+    .dashboard-hero h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .stat-card {
+        margin-bottom: 1rem;
+    }
+    
+    .profile-card, .listings-section {
+        margin-bottom: 1.5rem;
+    }
+    
+    .dashboard-hero {
+        text-align: center;
+    }
+    
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Add or improve media queries for better mobile responsiveness */
